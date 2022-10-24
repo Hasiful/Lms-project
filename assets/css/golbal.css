@@ -1,0 +1,29 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins',
+        sans-serif;
+    ;
+}
+
+:root {
+    --heading: rgba(13, 13, 13, 0.8);
+    --primaryColor: #26b2fd;
+    --secondary: #ED1C24;
+    --bgColor: #F8F8F8;
+}
+
+ul,
+li,
+a,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0px;
+    padding: 0px;
+}
