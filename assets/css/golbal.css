@@ -2,16 +2,31 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: 'Poppins',
+    font-family: 'Hind Siliguri',
         sans-serif;
     ;
+    box-sizing: border-box;
+}
+
+body {
+    color: var(--heading);
 }
 
 :root {
-    --heading: rgba(13, 13, 13, 0.8);
-    --primaryColor: #26b2fd;
-    --secondary: #ED1C24;
-    --bgColor: #F8F8F8;
+    --main: #6D28D9;
+    --primary: #0F172A;
+    --secondary: #F8FAFC;
+    --textColor: #334155;
+    --transition: all .3s ease-in-out;
+}
+
+a {
+    list-style: none;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
 }
 
 ul,
@@ -19,11 +34,88 @@ li,
 a,
 p,
 h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h2 {
     margin: 0px;
     padding: 0px;
+}
+
+h1,
+h2 {
+    color: var(--heading);
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+.container {
+    max-width: 1320px;
+    width: 100%;
+    margin: 0px auto;
+    padding: 0px 15px;
+}
+
+.section_padding {
+    padding: 50px 0px;
+}
+
+.btn_control {
+    border: none;
+    background-color: transparent;
+}
+
+.commo_btn {
+    border: 1px solid rgb(206, 212, 218);
+    height: 42px;
+    padding: 0px 22px;
+    width: auto;
+    border-radius: 32px;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--secondary);
+    background-color: var(--primary);
+}
+
+.commo_btn a {
+    color: var(--secondary);
+}
+
+.section_title {
+    text-align: center;
+}
+
+.setion_title_heading {
+    font-size: 26px;
+    line-height: 32px;
+    color: var(--primary);
+    font-weight: 700;
+}
+
+.setion_title_subhead {
+    margin-top: 0.5rem;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--textColor);
+}
+
+.mobile_toggler {
+    display: block;
+}
+
+.mobile_toggler ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.mobile_toggler ul li {
+    height: 2.4px;
+    width: 28px;
+    background-color: var(--primary);
 }
