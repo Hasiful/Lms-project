@@ -1,13 +1,13 @@
-const accordian = document.getElementsByClassName('accordion_item')
+const navList = document.getElementsByClassName('nav_item')
 
-;[...accordian].forEach(element => {
-    element.addEventListener('click', function(){
-        ;[...accordian].forEach(child => {
-            child.classList.remove("active-accordion")
-            this.classList.add("active-accordion")
-        });
+;[...navList].forEach(Element =>{
+    Element.addEventListener("click", function(){
+        ;[...navList].forEach(child => {
+            child.classList.remove("active_nave")
+        })
+        this.classList.add("active_nave")
     })
-});
+})
 
 
 $('.video_popup').magnificPopup({

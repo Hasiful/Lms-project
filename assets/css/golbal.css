@@ -13,10 +13,12 @@ body {
 }
 
 :root {
+    --topbar: rgb(15 23 42 / 80%);
     --main: #6D28D9;
     --primary: #0F172A;
     --secondary: #F8FAFC;
     --textColor: #334155;
+    --review: #ffae4f;
     --transition: all .3s ease-in-out;
 }
 
@@ -75,8 +77,27 @@ img {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--secondary);
     background-color: var(--primary);
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.commo_btn::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 0px;
+    top: 0px;
+    right: 0px;
+    background-color: var(--main);
+    transition: var(--transition);
+    z-index: -1;
+}
+
+.commo_btn:hover::after {
+    width: 100%;
+    left: 0px;
 }
 
 .commo_btn a {
@@ -100,6 +121,9 @@ img {
     font-size: 18px;
     line-height: 28px;
     color: var(--textColor);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .mobile_toggler {
