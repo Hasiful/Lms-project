@@ -174,9 +174,41 @@
 
 /* 
 =========== ==========
-      start banner section
+      end banner section
 =====================
  */
+
+.success_content {
+    max-width: 72rem;
+    margin: 0px auto;
+}
+
+.success_wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px;
+}
+
+.success_item {
+    text-align: center;
+    padding: 30px 15px;
+    background-color: rgb(109 40 217 / 9%);
+    border-radius: 10px;
+}
+
+.success_item_total p {
+    font-size: 35px;
+    line-height: 55px;
+    color: var(--main);
+    font-weight: 600;
+}
+
+.success_item_category p {
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--textColor);
+    font-weight: 500;
+}
 
 .our_course_section {
     background-image: url(../image/course/ourscourse.png);
@@ -430,17 +462,10 @@
     font-size: 16px;
     font-weight: 500;
     color: var(--secondary);
-    border: 2px solid transparent;
     background: linear-gradient(to right, #0F172A, #0f172ac5);
     padding: 12px 25px;
     border-radius: 32px;
     transition: all linear 0.3s;
-}
-
-.seminar_all_button a:hover {
-    border: 2px solid var(--primary);
-    background: var(--secondary);
-    color: var(--primary);
 }
 
 .seminar_thumbnail_image {
@@ -450,6 +475,127 @@
 
 .seminar_thumbnail_image img {
     filter: blur(0.2px) brightness(0.9);
+}
+
+/* ============= testimonial =========== */
+
+.tesitimonial_section {
+    background-image: url(../image/course/ourscourse.png);
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+.tesitimonial_content {
+    max-width: 72rem;
+    margin: 50px auto 0px;
+}
+
+.slider_arrow_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 13px;
+    margin-top: 30px;
+}
+
+.slider_arrow_left,
+.slider_arrow_right {
+    width: 45px;
+    height: 45px;
+    border: 2px solid var(--main);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all .3s linear;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--main);
+}
+
+.testimonial_wrapper {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.testimonial_item {
+    text-align: center;
+}
+
+.testimonial_item_image {
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0px auto 20px;
+    border: 2px solid var(--main);
+}
+
+.student_name_testimonial p {
+    font-size: 22px;
+    line-height: 24px;
+    font-weight: 500;
+    color: var(--primary);
+}
+
+.testimonial_student_it {
+    font-size: 14px;
+    line-height: 22px;
+    color: var(--textColor);
+    font-weight: 600;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.testimonial_student_it a {
+    color: var(--main);
+}
+
+.testimonial_comment p {
+    max-width: 800px;
+    margin: 0px auto;
+    color: var(--textColor);
+    font-weight: 500;
+}
+
+
+/*============= story=========== */
+.story_content {
+    margin-top: 50px;
+}
+
+.story_wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px;
+}
+
+.stroy_item {
+    position: relative;
+}
+
+.stroy_item_image {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.stroy_item_image img {
+    height: 350px;
+}
+
+.story_btn a {
+    display: block;
+    background-color: var(--secondary);
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    place-content: center;
+    border-radius: 50%;
+    color: var(--main);
 }
 
 /* =================  footer section ========== */
@@ -517,4 +663,295 @@
 
 .footer_item_list ul li a:hover {
     color: var(--secondary);
+}
+
+
+/* 
+============================
+        single course strart
+============================
+ */
+
+.single_page_cousre {
+    margin-top: 66px;
+}
+
+.single_cousre_wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.single_cousre_thumbnail,
+.single_cousre_content {
+    width: 100%;
+    padding: 0px 20px;
+}
+
+.single_cousre_thumbnail img {
+    min-height: auto;
+}
+
+.single_course_title p {
+    font-size: 36px;
+    line-height: 46px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    color: var(--primary);
+}
+
+.single_course_price p {
+    margin-bottom: 20px;
+    color: var(--textColor);
+    font-size: 24px;
+    line-height: 34px;
+    font-weight: 500;
+}
+
+.single_course_text p {
+    font-size: 18px;
+    color: var(--textColor);
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+
+
+.cousre_details_title {
+    font-size: 36px;
+    line-height: 46px;
+    color: var(--primary);
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.cousre_details_text p {
+    font-size: 18px;
+    color: var(--textColor);
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+
+/* 
+============================
+        single course end
+============================
+ */
+
+
+/* 
+ ===============
+    cart page
+ ===============
+*/
+
+.cartpage {
+    margin-top: 66px;
+}
+
+.page_tile h1 {
+    font-size: 46px;
+    line-height: 56px;
+    color: var(--primary);
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.cart_item_table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+
+.cart_item_table thead tr th {
+    padding: 10px 0px;
+    font-size: 18px;
+    color: var(--primary);
+    font-weight: 600;
+    line-height: 28px;
+}
+
+.cart_item_table thead tr th:first-child {
+    text-align: center;
+}
+
+.cart_item_table tbody tr td {
+    padding: 10px 0px;
+    border-top: 1px solid rgba(0, 0, 0, .1);
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    font-size: 18px;
+    color: var(--textColor);
+    line-height: 28px;
+    font-weight: 500;
+}
+
+.cart_item_table tbody tr td:first-child {
+    width: 120px;
+}
+
+.cart_td_course {
+    padding-left: 20px;
+}
+
+.cart_td_course_image {
+    height: 75px;
+    width: 75px;
+}
+
+.cart_td_course_image img {
+    height: 100%;
+}
+
+.cupon_code {
+    margin-top: 30px;
+}
+
+.cupon_code_input {
+    max-width: 500px;
+    width: 100%;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.checkout_box_wrapper {
+    max-width: 560px;
+    width: 100%;
+    margin-left: auto;
+    margin-top: 30px;
+    background-color: rgb(109 40 217 / 10%);
+}
+
+.checkout_box_content {
+    padding: 30px;
+    border-radius: 4px;
+}
+
+.checkout_box_title h1 {
+    font-size: 22px;
+    line-height: 32px;
+    color: var(--primary);
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+
+.check_out_price_list ul li {
+    padding: 8px 0px;
+}
+
+.check_out_price_list ul li:not(:last-child) {
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+}
+
+.check_out_price_list ul li span:first-child {
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--primary);
+    font-weight: 700;
+    min-width: 175px;
+    display: inline-block;
+}
+
+.check_out_price_subtotal,
+.check_out_price_total {
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--primary);
+    font-weight: 400;
+}
+
+.check_out_price_total {
+    font-weight: 600;
+}
+
+.checkout_button a {
+    display: block;
+    margin-top: 20px;
+    background-color: var(--primary);
+    padding: 13px 29px;
+    text-align: center;
+    color: var(--secondary);
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 500;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.checkout_button a::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: var(--main);
+    top: 0px;
+    left: -100%;
+    transition: var(--transition);
+    z-index: -1;
+}
+
+.checkout_button a:hover::after {
+    left: 0px;
+}
+
+/* ================ check out ========== */
+
+.checkout_page {
+    margin-top: 66px;
+}
+
+.checkout_form_title h1 {
+    font-size: 28px;
+    line-height: 38px;
+    color: var(--primary);
+    margin-bottom: 20px;
+}
+
+.checkout_page_content {
+    max-width: 760px;
+    width: 100%;
+    margin: 0px auto;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(109 40 217 / 10%);
+}
+
+.checkout_input {
+    background-color: var(--secondary) !important;
+}
+
+.input_inner:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.input_inner label {
+    display: inline-block;
+    margin-bottom: 15px;
+    color: var(--primary);
+    padding-left: 5px;
+}
+
+.input_inner label sup {
+    color: rgba(255, 0, 0, 0.703);
+}
+
+.checkout_pay_wrapper {
+    margin-top: 50px;
+    background-color: rgb(109 40 217 / 10%);
+}
+
+.checkout_proces_list ul li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 0px;
+}
+
+.payment_getway {
+    font-size: 16px;
+    margin-bottom: 30px;
+    color: var(--main);
 }
