@@ -188,4 +188,18 @@
         flex-direction: row;
     }
 
+    .playlist_sidebar {
+        width: 400px;
+        left: 0px;
+    }
+
+    .playlist_body {
+        width: calc(100% - 400px);
+        margin-left: 400px;
+    }
+
+    .playlist_toggle {
+        display: none;
+    }
+
 }
