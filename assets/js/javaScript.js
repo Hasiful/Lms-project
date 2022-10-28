@@ -53,9 +53,9 @@ sideBarCross.addEventListener("click", function(){
 })
 
 
-var playListToggle = document.getElementById("playlist_toggle")
+var playListToggle = document.getElementById("playlisttoggle")
 var playListSide = document.getElementById("playlist_sidebar")
 
-// playListToggle.addEventListener("click", function () {
-//     playListSide.classList.toggle("active_sidebar")
-// })
+playListToggle.addEventListener("click", function(){
+    playListSide.classList.toggle("active_playside")
+})

@@ -76,9 +76,8 @@
                     <!-- right -->
                     <div class="header_menu">
                         <ul>
-                            <li class="nav_item active_nave"><a
-                                    href="file:///C:/Users/hp/OneDrive/Desktop/lms%20Project/index.html">হোম</a>
-                            </li>
+                            <li class="nav_item"><a
+                                    href="file:///C:/Users/hp/OneDrive/Desktop/lms%20Project/index.html">হোম</a></li>
                             <li class="nav_item"><a
                                     href="file:///C:/Users/hp/OneDrive/Desktop/lms%20Project/about.html">আমাদের
                                     সম্পর্কে</a></li>
@@ -88,11 +87,12 @@
                             <li class="nav_item"><a
                                     href="file:///C:/Users/hp/OneDrive/Desktop/lms%20Project/contactus.html">যোগাযোগ</a>
                             </li>
+
                             <li class="nav_item"><a
                                     href="file:///C:/Users/hp/OneDrive/Desktop/lms%20Project/gallary.html">গ্যালারি</a>
                             </li>
 
-                            <li class="nav_item"><a
+                            <li class="nav_item active_nave"><a
                                     href="file:///C:/Users/hp/OneDrive/Desktop/lms%20Project/profile.html">প্রোফাইল
                                 </a>
                             </li>
@@ -118,7 +118,7 @@
 
                             <div class="sidebar_content_wrapper">
                                 <ul>
-                                    <li class="nav_item"><a
+                                    <li class="nav_item "><a
                                             href="file:///C:/Users/hp/OneDrive/Desktop/lms%20Project/index.html">হোম</a>
                                     </li>
                                     <li class="nav_item"><a
@@ -133,7 +133,7 @@
                                     <li class="nav_item"><a
                                             href="file:///C:/Users/hp/OneDrive/Desktop/lms%20Project/gallary.html">গ্যালারি</a>
                                     </li>
-                                    <li class="nav_item"><a
+                                    <li class="nav_item active_nave"><a
                                             href="file:///C:/Users/hp/OneDrive/Desktop/lms%20Project/profile.html">প্রোফাইল
                                         </a>
                                     </li>
@@ -154,9 +154,6 @@
 
         </div>
 
-        <!-- seminar banner -->
-        <!-- seminar banner end -->
-
     </header>
 
     <!-- 
@@ -167,87 +164,160 @@
 
     <!-- 
    ========================
-         cart page start
+        profile page start
    ======================== 
    -->
 
-    <section class="cartpage section_padding">
+    <section class="profile_page section_padding">
         <div class="container">
-            <div class="cartpage_content">
-                <!-- title -->
-                <div class="page_tile">
-                    <h1>কার্ট</h1>
+            <div class="profile_content">
+                <!-- header -->
+                <div class="profile_page_header">
+                    <div class="profile_wellcome">
+                        <p>হ্যালো </p>
+                    </div>
+                    <div class="profile_name">
+                        <p>হাসিফুল মোল্লা </p>
+                    </div>
                 </div>
 
-                <!-- table -->
-                <table class="cart_item_table">
-                    <!-- thead -->
-                    <thead>
-                        <tr>
-                            <th></th>
-                            <th>কোর্স</th>
-                            <th> মূল্য</th>
-                            <th>সংখ্যা</th>
-                            <th> সাবটোটাল</th>
-                            <th>অ্যাকশন </th>
-                        </tr>
-                    </thead>
+                <!-- profile tab -->
 
-                    <tbody>
-                        <tr>
-                            <td>
-                                <!-- item -->
-                                <div class="cart_td_course">
-                                    <div class="cart_td_course_image">
-                                        <img src="assets/image/card/course_1662637290.jpg" alt="">
+                <div class="clint_tab_area_main tab-content">
+
+                    <!-- single area -->
+
+                    <div class="clint_tab_area tab-pane fade show active" id="clintFirstTab">
+
+                        <div class="profile_wrapper">
+
+                            <div class="nav nav-pills profile_tab" id="v-pills-tab" role="tablist">
+
+                                <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill"
+                                    data-bs-target="#v-pills-home" type="button">ড্যাশবোর্ড </button>
+
+                                <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill"
+                                    data-bs-target="#v-pills-profile" type="button">আমার প্রোফাইল </button>
+
+                                <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill"
+                                    data-bs-target="#v-pills-messages" type="button">এনরোল কোর্স </button>
+
+                                <button class="profle_logout">লগ আউট </button>
+
+                            </div>
+
+                            <div class="tab-content profile_tab_content" id="v-pills-tabContent">
+
+                                <!-- first tab -->
+                                <div class="tab-pane fade active show" id="v-pills-home">
+                                    <div class="profile_dash">
+                                        <div class="profile_details_title">ড্যাশবোর্ড</div>
+                                        <div class="profile_dash_wrapper">
+                                            <!-- item -->
+                                            <div class="profile_dash_item">
+                                                <div class="profile_dash_item_icon"><i class="fa-solid fa-book"></i>
+                                                </div>
+                                                <div class="profile_dash_item_number">0</div>
+                                                <div class="profile_dash_item_title">এনরোল কোর্স </div>
+                                            </div>
+                                            <!-- item -->
+                                            <div class="profile_dash_item">
+                                                <div class="profile_dash_item_icon"><i
+                                                        class="fa-solid fa-graduation-cap"></i>
+                                                </div>
+                                                <div class="profile_dash_item_number">0</div>
+                                                <div class="profile_dash_item_title">কমপ্লিট কোর্স </div>
+                                            </div>
+                                            <!-- item -->
+                                            <div class="profile_dash_item">
+                                                <div class="profile_dash_item_icon"><i class="fa-solid fa-trophy"></i>
+                                                </div>
+                                                <div class="profile_dash_item_number">0</div>
+                                                <div class="profile_dash_item_title">একটিভ কোর্স </div>
+                                            </div>
+
+                                        </div>
                                     </div>
                                 </div>
-                            </td>
-                            <td>
-                                <div class="cart_td_course_title">ইউআই ইউএক্স ডিজাইন</div>
-                            </td>
-                            <td>৪০০০০ টাকা</td>
-                            <td>২</td>
-                            <td>৪০০০০ টাকা</td>
-                            <td><span style="cursor: pointer;"><i class="fa-solid fa-trash"></i></span></td>
-                        </tr>
-                    </tbody>
-                </table>
 
-                <!-- cupon code -->
-                <div class="cupon_code">
-                    <div class="cupon_code_input">
-                        <input type="text" class="input_control cupon_input" placeholder="কুপন কোড">
+                                <!-- second tab -->
+
+                                <div class="tab-pane fade" id="v-pills-profile">
+                                    <div class="profile_details">
+                                        <div class="profile_details_content">
+                                            <div class="profile_details_title">আমার প্রোফাইল </div>
+
+                                            <table class="profle_table">
+                                                <tbody>
+
+                                                    <tr>
+                                                        <td>রেজিস্ট্রেশন তারিখ </td>
+                                                        <td>২৪-১০-২২</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>ফার্স্ট নাম</td>
+                                                        <td>হাসিফুল </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>লাস্ট নাম </td>
+                                                        <td>মোল্লা</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>ইউসার নাম</td>
+                                                        <td>হাসিফ</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>ইমেইল </td>
+                                                        <td>hasifulislam32@gmail.com</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>ফোন নম্বর </td>
+                                                        <td>০১৭২৩৫০৭৯৮৯</td>
+                                                    </tr>
+
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tab-pane fade" id="v-pills-messages">
+                                    <div class="profile_courser">
+                                        <div class="profile_courser_wrapper">
+
+                                            <!-- item -->
+                                            <div class="profile_courser_item">
+                                                <div class="profile_courser_item_thumbnail">
+                                                    <img src="assets/image/card/course_1662552115.jpg" alt="">
+                                                </div>
+                                                <div class="profile_courser_item_title">ইউআই ইউএক্স ডিজাইন</div>
+                                            </div>
+
+                                            <!-- item -->
+                                            <div class="profile_courser_item">
+                                                <div class="profile_courser_item_thumbnail">
+                                                    <img src="assets/image/card/course_1662552115.jpg" alt="">
+                                                </div>
+                                                <div class="profile_courser_item_title">ইউআই ইউএক্স ডিজাইন</div>
+                                            </div>
+
+                                            <!-- item -->
+                                            <div class="profile_courser_item">
+                                                <div class="profile_courser_item_thumbnail">
+                                                    <img src="assets/image/card/course_1662552115.jpg" alt="">
+                                                </div>
+                                                <div class="profile_courser_item_title">ইউআই ইউএক্স ডিজাইন</div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
                     </div>
 
-                    <div class="enroll_btn commo_btn">
-                        <a href="#">কুপন কোড যোগ করুন</a>
-                    </div>
-                </div>
-
-                <!-- checkout box -->
-
-                <div class="checkout_box_wrapper">
-                    <div class="checkout_box_content">
-                        <!-- title -->
-                        <div class="checkout_box_title">
-                            <h1>শপিং কার্টের মোট মূল্য</h1>
-                        </div>
-
-                        <div class="check_out_price_list">
-                            <ul>
-                                <li><span>সাবটোটাল</span> <span class="check_out_price_subtotal"> 3,500.00</span>
-                                </li>
-                                <li><span>মোট মূল্য </span> <span class="check_out_price_total"> 3,500.00</span></li>
-                            </ul>
-                        </div>
-
-                        <!-- button -->
-
-                        <div class="checkout_button">
-                            <a href="file:///C:/Users/hp/OneDrive/Desktop/lms%20Project/checkout.html">চেকআউট করুন</a>
-                        </div>
-                    </div>
                 </div>
 
             </div>
@@ -256,13 +326,14 @@
 
     <!-- 
    ========================
-         cart page end
+         profile page end
    ======================== 
    -->
 
 
+
     <!-- footer section -->
-    <footer class="footer_section section_padding">
+    <footer class=" footer_section section_padding">
         <div class="container">
             <div class="footer_section_content">
                 <!-- wrapper -->
